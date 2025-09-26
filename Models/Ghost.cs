@@ -1,18 +1,10 @@
-﻿using W5_assignment_template.Behaviors;
-using W5_assignment_template.Interfaces;
+﻿using W5_assignment_template.Interfaces;
 
 namespace W5_assignment_template.Models
 {
     public class Ghost : IEntity, IFlyable
     {
         public string Name { get; set; }
-        
-        private readonly FlyBehavior _flyBehavior;
-
-        public Ghost()
-        {
-            _flyBehavior = new FlyBehavior(Fly);
-        }
         
         public void Fly()
         {
